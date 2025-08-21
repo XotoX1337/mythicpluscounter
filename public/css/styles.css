@@ -1,0 +1,85 @@
+@import url(pico.min.css);
+@import url(../fonts/remix/remixicon.css);
+body {
+  min-height: 100vh;
+}
+body nav {
+  padding: 0 2rem 0 1rem;
+  background: #f6f7f9;
+  border-bottom: 2px solid lightgray;
+}
+body nav img {
+  height: 2.6rem;
+}
+body nav .logo {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding-left: 0;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+body main > .container {
+  margin-top: 2em;
+}
+body main table#sort thead th {
+  cursor: pointer;
+}
+body main table#sort thead th:after {
+  content: "\f15f";
+  font-family: 'Remixicon';
+  font-size: 0.6em;
+  margin-left: 0.2rem;
+  color: #999;
+}
+body main table#sort tbody tr:nth-child(even) {
+  background: #f6f7f9;
+}
+body main table#sort tbody tr:hover {
+  background: #e6ebef;
+}
+body footer {
+  padding: 0;
+  text-align: center;
+}
+body footer p {
+  font-size: 0.9em;
+}
+body footer .inline {
+  display: inline-block;
+  height: 1em;
+  margin-bottom: 0.2rem;
+}
+[role="button"] {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}
+.danger {
+  background: #ffcccc;
+}
+.success {
+  background: #ccfecc;
+}
+.warning {
+  background: #f8f9c7;
+}
+.btn-danger {
+  background: #D93526;
+}
+.btn-success {
+  background: #398712;
+}
+[role="button"] {
+  font-size: 0.875rem;
+}
+[data-tooltip]:not(a, button, input) {
+  border-bottom: var(--border-width) solid var(--table-border-color);
+  text-decoration: none;
+  cursor: help;
+}
+/*# sourceMappingURL=styles.css.map */

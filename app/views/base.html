@@ -1,0 +1,35 @@
+{{ define "header" }}
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <script defer src="/js/htmx.min.js#1.9.5"></script>
+    <script src="/js/tablesort.min.js#5.4.0"></script>
+    <title>{{ Name }} {{ Version }}</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <img src="" alt="logo">
+    </ul>
+    <ul>
+        <li class="logo">Mythic Plus Counter</li>
+    </ul>
+    <ul>
+        <li></li>
+    </ul>
+</nav>
+<main>
+    {{ end }}
+    {{ define "footer" }}
+</main>
+<footer>
+    <p>© {{ Year }} <a href="https://github.com/XotoX1337/mythicpluscounter" target="_blank">Frederic Leist</a>
+        &squarf; Powered by <a href="https://gofiber.io/">
+            <img src="/img/fiber.svg" alt="Fiber" class="inline">
+        </a></p>
+</footer>
+</body>
+</html>
+{{ end }}

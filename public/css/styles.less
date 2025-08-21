@@ -1,0 +1,104 @@
+@import url(pico.min.css);
+@import url(../fonts/remix/remixicon.css);
+
+@color-primary: rgb(65, 84, 98);
+@color-danger: #ffcccc;
+@color-warning: #f8f9c7;
+@color-success: #ccfecc;
+
+body {
+  min-height: 100vh;
+  nav {
+    padding: 0 2rem 0 1rem;
+    background: lighten(@color-primary, 65);
+    border-bottom: 2px solid lightgray;
+    img {
+      height: 2.6rem;
+    }
+    .logo {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      padding-left: 0;
+    }
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    >.container {
+      margin-top: 2em;
+    }
+    table#sort {
+      thead {
+        th {
+          cursor: pointer;
+          &:after {
+            content: "\f15f";
+            font-family: 'Remixicon';
+            font-size: 0.6em;
+            margin-left: 0.2rem;
+            color: #999;
+          }
+        }
+      }
+      tbody {
+        tr:nth-child(even) {
+          background: lighten(@color-primary, 65);
+        }
+        tr:hover {
+          background: lighten(@color-primary, 60);
+        }
+      }
+    }
+  }
+  footer {
+    padding: 0;
+    text-align: center;
+    p {
+      font-size: 0.9em;
+    }
+    .inline {
+      display: inline-block;
+      height: 1em;
+      margin-bottom: 0.2rem;
+    }
+  }
+}
+
+[role="button"] {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.danger {
+  background: @color-danger;
+}
+
+.success {
+  background: @color-success;
+}
+
+.warning {
+  background: @color-warning;
+}
+
+.btn-danger {
+  background: #D93526;
+}
+
+.btn-success {
+  background: #398712;
+}
+[role="button"] {
+  font-size: 0.875rem;
+}
+
+[data-tooltip]:not(a, button, input) {
+  border-bottom: var(--border-width) solid var(--table-border-color);
+  text-decoration: none;
+  cursor: help;
+}
