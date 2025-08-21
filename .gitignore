@@ -1,0 +1,6 @@
+dist/
+/.vscode/
+*.log
+mythicpluscounter
+/tmp/
+/.idea/
